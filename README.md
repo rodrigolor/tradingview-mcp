@@ -5,7 +5,7 @@ A powerful, multi-agent Model Context Protocol (MCP) server that transforms Clau
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![MCP Ready](https://img.shields.io/badge/MCP-Ready-brightgreen)](https://modelcontextprotocol.com/)
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](https://github.com/atilaahmettaner/tradingview-mcp/releases)
+[![Version](https://img.shields.io/badge/version-v0.3.0-blue)](https://github.com/atilaahmettaner/tradingview-mcp/releases)
 
 ---
 
@@ -44,7 +44,7 @@ https://github-production-user-asset-6210df.s3.amazonaws.com/67838093/478689497-
 
 Run the framework immediately on port 8080:
 ```bash
-docker run -p 8080:8000 atilaahmettaner/tradingview-mcp:latest
+docker run -p 8080:8000 atilaahmet/tradingview-mcp:latest
 ```
 
 **Claude Desktop Configuration:**
