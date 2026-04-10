@@ -29,6 +29,7 @@ All notable changes to this project will be documented in this file.
 
 ### Notes (personal)
 - I changed the default number of walk-forward splits from 5 to 3 in my local config — 5 folds felt like overkill for the shorter crypto datasets I usually test on.
+- Changed default `train_ratio` from 0.7 to 0.8 locally — I prefer giving the model more training data, especially on 1h intervals where there's more noise.
 
 ---
 
@@ -56,9 +57,4 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - `compare_strategies` now fetches OHLCV once and runs all strategies on cached data (5x faster)
-- Yahoo Finance data fetching uses direct connection first, proxy fallback only on failure
-
-## [0.5.0] - 2026-03-29
-
-### Added
-- **Real-Time Market Sentiment (Agent-Reach Integration)**: Integrated
+- Yahoo Fi
