@@ -37,13 +37,11 @@ All notable changes to this project will be documented in this file.
 - Set default `include_trade_log` to `True` locally — I always end up enabling it anyway, so saves a step every run.
 - Set default `include_equity_curve` to `True` locally — same reasoning as trade log; I always want the curve for visual review.
 - Reminder: if running walk-forward on 1h data with equity curve enabled, memory can spike noticeably — may want to flip `include_equity_curve` back to `False` for those runs specifically.
+- Lowered default `commission` from 0.1% to 0.075% locally — more accurate for the exchanges I actually use (Binance maker fee tier I'm on).
 
 ---
 
 ## [0.6.0] - 2026-03-29
 
 ### Added
-- **Backtesting Engine v2** (`backtest_strategy`, `compare_strategies`):
-  - 6 trading strategies: RSI, Bollinger Band, MACD, EMA Cross, **Supertrend** (🔥 trending 2025), **Donchian Channel** (Turtle Trader classic)
-  - Institutional-grade metrics: Sharpe Ratio, Calmar Ratio, Expectancy, Profit Factor, Max Drawdown
-  - Transaction cost simulation:
+- **Backtesting Eng
