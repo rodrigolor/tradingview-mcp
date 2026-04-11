@@ -31,6 +31,7 @@ All notable changes to this project will be documented in this file.
 - I changed the default number of walk-forward splits from 5 to 3 in my local config — 5 folds felt like overkill for the shorter crypto datasets I usually test on.
 - Changed default `train_ratio` from 0.7 to 0.8 locally — I prefer giving the model more training data, especially on 1h intervals where there's more noise.
 - Set default `interval` to `"1h"` in my local copy of `backtest_strategy` — I mostly test crypto intraday and got tired of specifying it every time.
+- Bumped default `initial_capital` from 10000 to 1000 locally — easier to mentally track % returns when starting from a round number I actually trade with.
 
 ---
 
@@ -49,7 +50,4 @@ All notable changes to this project will be documented in this file.
   - Turkish stocks supported (THYAO.IS, SASA.IS...)
 - **Webshare Rotating Proxy Manager**:
   - 250 sticky sessions for rate-limit bypass
-  - Direct-first + proxy-fallback architecture for reliability
-  - Zero-config for users (optional env-based configuration)
-- **Technical Indicators (pure Python, zero deps)**:
-  - ATR (Average True Range)
+  - Direct-first + proxy-fallback architecture for reli
