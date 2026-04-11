@@ -33,6 +33,7 @@ All notable changes to this project will be documented in this file.
 - Set default `interval` to `"1h"` in my local copy of `backtest_strategy` — I mostly test crypto intraday and got tired of specifying it every time.
 - Bumped default `initial_capital` from 10000 to 1000 locally — easier to mentally track % returns when starting from a round number I actually trade with.
 - Bumped `recent_trades` count from 5 to 10 locally — 5 trades wasn't enough context when reviewing 1h backtest results with lots of short-duration trades.
+- Set default `include_trade_log` to `True` locally — I always end up enabling it anyway, so saves a step every run.
 
 ---
 
@@ -46,6 +47,4 @@ All notable changes to this project will be documented in this file.
   - Buy-and-hold benchmark comparison
   - Single OHLCV fetch for `compare_strategies` (all 6 strategies in ~0.3s)
 - **Yahoo Finance Integration** (`yahoo_price`, `market_snapshot`):
-  - Real-time quotes for stocks, crypto, ETFs, indices (S&P500, NASDAQ, VIX), FX
-  - Global market snapshot with 14 instruments across 4 asset classes
-  - Turkish stocks supported (THYAO.
+  - Real-time quotes for stocks
