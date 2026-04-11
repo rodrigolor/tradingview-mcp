@@ -34,6 +34,7 @@ All notable changes to this project will be documented in this file.
 - Bumped default `initial_capital` from 10000 to 1000 locally — easier to mentally track % returns when starting from a round number I actually trade with.
 - Bumped `recent_trades` count from 5 to 10 locally — 5 trades wasn't enough context when reviewing 1h backtest results with lots of short-duration trades.
 - Set default `include_trade_log` to `True` locally — I always end up enabling it anyway, so saves a step every run.
+- Set default `include_equity_curve` to `True` locally — same reasoning as trade log; I always want the curve for visual review.
 
 ---
 
@@ -45,6 +46,4 @@ All notable changes to this project will be documented in this file.
   - Institutional-grade metrics: Sharpe Ratio, Calmar Ratio, Expectancy, Profit Factor, Max Drawdown
   - Transaction cost simulation: per-trade commission + slippage
   - Buy-and-hold benchmark comparison
-  - Single OHLCV fetch for `compare_strategies` (all 6 strategies in ~0.3s)
-- **Yahoo Finance Integration** (`yahoo_price`, `market_snapshot`):
-  - Real-time quotes for stocks
+  - Single OHLCV fetch for `compare_strategies` (all 6 str
