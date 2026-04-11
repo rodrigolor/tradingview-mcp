@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
   - Running capital and cumulative return at each trade
 - **Equity Curve** (`include_equity_curve=True`):
   - Capital value + drawdown % at each trade exit — ready for charting
+  - ⚠️ Note: on long 1h backtests (e.g. 2+ years of hourly data) this list can get large; consider disabling if only reviewing summary stats
 - **1h (Hourly) Timeframe** (`interval="1h"`):
   - All strategies and compare now support intraday hourly data
   - Sharpe ratio annualization corrected for 1h bars (252 × 6 trading hours)
@@ -35,6 +36,7 @@ All notable changes to this project will be documented in this file.
 - Bumped `recent_trades` count from 5 to 10 locally — 5 trades wasn't enough context when reviewing 1h backtest results with lots of short-duration trades.
 - Set default `include_trade_log` to `True` locally — I always end up enabling it anyway, so saves a step every run.
 - Set default `include_equity_curve` to `True` locally — same reasoning as trade log; I always want the curve for visual review.
+- Reminder: if running walk-forward on 1h data with equity curve enabled, memory can spike noticeably — may want to flip `include_equity_curve` back to `False` for those runs specifically.
 
 ---
 
@@ -44,6 +46,4 @@ All notable changes to this project will be documented in this file.
 - **Backtesting Engine v2** (`backtest_strategy`, `compare_strategies`):
   - 6 trading strategies: RSI, Bollinger Band, MACD, EMA Cross, **Supertrend** (🔥 trending 2025), **Donchian Channel** (Turtle Trader classic)
   - Institutional-grade metrics: Sharpe Ratio, Calmar Ratio, Expectancy, Profit Factor, Max Drawdown
-  - Transaction cost simulation: per-trade commission + slippage
-  - Buy-and-hold benchmark comparison
-  - Single OHLCV fetch for `compare_strategies` (all 6 str
+  - Transaction cost simulation:
