@@ -71,8 +71,11 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
-cov_report = ["term-missing", "html"]
+# Fixed: cov_report is not a valid pytest ini option; coverage config belongs in [tool.coverage]
 
 [tool.coverage.run]
 source = ["src/tradingview_mcp"]
 omit = ["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
