@@ -72,6 +72,8 @@ ignore_missing_imports = true
 asyncio_mode = "auto"
 testpaths = ["tests"]
 # Fixed: cov_report is not a valid pytest ini option; coverage config belongs in [tool.coverage]
+# Increase verbosity so it's easier to see which tests pass/fail during local dev
+addopts = "-v"
 
 [tool.coverage.run]
 source = ["src/tradingview_mcp"]
