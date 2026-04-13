@@ -66,8 +66,7 @@ ignore = ["E501"]
 python_version = "3.10"
 # Relaxing strict mode for personal use — easier to experiment with
 strict = false
-ignore_missing_imports = true
-
+ignore
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
@@ -81,3 +80,6 @@ omit = ["tests/*"]
 
 [tool.coverage.report]
 show_missing = true
+# Show a concise summary at the end; skip files with 100% coverage to reduce noise
+skip_covered = true
+fail_under = 50
