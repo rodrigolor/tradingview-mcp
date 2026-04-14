@@ -37,4 +37,4 @@ All notable changes to this project will be documented in this file.
 - Set default `include_trade_log` to `True` locally — I always end up enabling it anyway, so saves a step every run.
 - Set default `include_equity_curve` to `True` locally — same reasoning as trade log; I always want the curve for visual review.
 - Reminder: if running walk-forward on 1h data with equity curve enabled, memory can spike noticeably — may want to flip `include_equity_curve` back to `False` for those runs specifically.
-- Lowered default `commission` from 0.1% to 0.075% locally — closer to what I actually pay on Binance with BNB fee discount.
+- Lowered default `commission` from 0.1% to 0.075% locally — closer to what I actually pay on Binance with BNB fee discount applied.
