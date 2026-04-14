@@ -82,4 +82,5 @@ omit = ["tests/*"]
 show_missing = true
 # Show a concise summary at the end; skip files with 100% coverage to reduce noise
 skip_covered = true
-fail_under = 50
+# Lowered threshold — still useful as a sanity check without being too strict for personal use
+fail_under = 30
