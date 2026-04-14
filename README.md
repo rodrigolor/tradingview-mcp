@@ -92,7 +92,7 @@ docker run --env-file .env tradingview-mcp
 
 `1m`, `5m`, `15m`, `30m`, `1h`, `2h`, `4h`, `1d`, `1W`, `1M`
 
-> **Note:** I primarily use `1d` and `1W` for position trading and macro trend analysis. `4h` is useful for entry timing once a daily trend is confirmed.
+> **Note:** I primarily use `1d` and `1W` for position trading and macro trend analysis. `4h` is useful for entry timing once a daily trend is confirmed. `1h` is handy for crypto since it tends to move faster than equities.
 
 ## Changelog
 
